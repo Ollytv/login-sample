@@ -1,0 +1,121 @@
+body{
+	background-image: url(building.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 98%;
+}
+.container{
+ font-size: 20px;
+ float: center;
+margin-top: 10px;
+padding: 20px;
+margin: 0 20px 20px 0;
+overflow: hidden;
+}
+#form-wrap{
+	box-sizing:border-box;	
+	background-color:rgb(95, 158, 160);
+	width:30%;
+   align-items: center;
+   margin: 0;
+   padding: 0;
+}
+#form-wrap .container h3{
+	color:white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 35px;
+	text-decoration: underline;
+
+}
+#form-wrap .container input[type="text"]{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	width:100%;
+	border: none;
+	background: none;
+	border-bottom: solid red 1px;
+	margin-top: 10px;
+	
+}
+#form-wrap .container input[type="email"]{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	width:100%;
+	border: none;
+	background: none;
+	border-bottom: solid red 1px;
+	margin-top: 10px;
+}
+#form-wrap .container input[type="password"]{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	width:100%;
+	border: none;
+	background: none;
+	border-bottom: solid red 1px;
+	margin-top: 10px;
+}
+#form-wrap .container button[type="submit"]{
+	font-family:monospace;
+	color:white;
+	background: blue;
+	font-size: 25px;
+	width:80%;
+	border: none;
+	height:40%;
+	cursor:pointer;
+	margin-top: 10px;
+	
+}
+#form-wrap .container button[type="submit"]:hover{
+color:blue;
+background:slategray;
+}
+#form-wrap .container a{
+	font-size: 20px;
+	font-family: monospace;
+	color:red;
+	
+}
+#form-wrap .container nav{
+ margin-top: 10px;
+
+}
+#form-wrap .container nav li{
+	display:inline;
+	list-style-type: none;
+	padding: 20px;
+	
+}
+#form-wrap .container img{
+	width:35%;
+}
+#form-wrap{
+	text-align: center;
+	margin-left: 500px; 
+	margin-top:70px;
+	align-items:center;
+}
+@media(max-width:760px){
+	#form-wrap, .container,.header, #form, .brand_sign{
+		float:none;
+		text-align: center;
+		width:98%;
+	}
+	#form-wrap{
+		margin-left: 30px;
+        width: 75%;
+
+	}
+	#form{
+		width: 85%;
+		text-align: center;
+		margin-left: 0;
+		margin-right: 30px;
+	}
+	 img{
+      width: 40%;
+	}
+    
+}

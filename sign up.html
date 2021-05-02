@@ -1,0 +1,54 @@
+<?php 
+$db=new mysqli("localhost","root","","codeworld");
+if(mysqli_connect_error()){
+    echo"Wrong connection";
+}else{
+    echo"connected";
+}
+if(isset($_POST["submit"])){
+    $UserName=$_POST["username"];
+    $email=$_POST["email"];
+    $password=$_POST["password"];
+  //send to db table
+  $insert="insert into ola values('','".$UserName."','".$email."','".$password."',now())";
+  $q=$db->query($insert); 
+  if($q){
+      echo" Login Successfull";
+}else{
+    echo"invalid credentials";
+}
+?>
+<!DOCTYPE html>
+<html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"content="width=device-width, initial-scale=1.0">
+	<title>SIGN UP FORM</title>
+	<link rel="stylesheet"href="sign.css">
+</head>
+<body>
+	<div id="form-wrap">
+<div class="container">
+	<div id="form">
+		<div class="brand_sign"><img src="codeworld logo.png"></div>
+		<center>
+		<h3 class="header">SIGN-UP</h3>
+	<form method="POST"action=" ">
+	 <input type="text" name="username"placeholder="Username"id="username"><br><br>
+	<input type="email" name="email"placeholder="Email"id="username"><br><br>
+	<input type="password" name="password"placeholder="Password"id="password"><br><br>
+	<button class="button"type="submit"name="LOGIN">LOGIN</button>
+    <nav>
+	<li><a href="Register.html">Register</a></li>
+	<li><a href="help.html">Help?</a></li>
+
+	
+</nav>
+	</form>
+</center>
+</div>
+</div>
+</div>
+</body>
+</html>
